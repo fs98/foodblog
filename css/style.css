@@ -5,6 +5,11 @@ body {
 	color: #414a4c;
 }
 
+::selection{
+	background-color: #91b496;
+	color: white;
+}
+
 .text-default{
 	color: #414a4c;
 }
@@ -214,14 +219,14 @@ section .container div .right-column{
 }
 
 #contact-info input::placeholder{
-	font-style: italic;
 	font-size: 15px;
+	font-weight: 200;
 }
 
 #contact-info textarea::placeholder{
-	font-style: italic;
 	font-size: 15px;
 	padding-top: 5px;
+	font-weight: 200
 }
 
 #contact-info input:focus{
@@ -403,205 +408,210 @@ header #header-top{
 
 /* Navbar links */
 		
-		header .header-bottom nav ul li .nav-link{
-			margin-top: 25px;
-			font-weight: 500;
-		}
+header .header-bottom nav ul li .nav-link{
+	margin-top: 25px;
+	font-weight: 500;
+}
 
-		header .header-bottom nav .search-btn{
-			color: white;
-			background-color: #f5d76e;
-			padding: 4px 10px 4px 10px;
-		}
+header .header-bottom nav .search-btn{
+	color: white;
+	background-color: #f5d76e;
+	padding: 4px 10px 4px 10px;
+}
 
-		header .header-bottom nav .search-btn:hover{
-			color: white;
-			box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.4);
-			transition: 0.3s;
-		}
+header .header-bottom nav .search-btn:hover{
+	color: white;
+	box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.4);
+	transition: 0.3s;
+}
 
-		header .header-bottom nav ul li .nav-link:hover{
-			color: #f5d76e !important;
-			transition: 0.5s;
-		}
+header .header-bottom nav ul li .nav-link:hover{
+	color: #f5d76e !important;
+	transition: 0.5s;
+}
 
 /* Header bottom - navbar */
 
-		/* Extra large screens */ 
+/* Extra large screens */ 
 
-		@media (min-width: 1200px) {
-		  header .header-bottom nav{
-			padding: 23px 0px 23px 0px;
-		}
-			header .header-bottom img{
-				height: 55px;
-		}
-			section .container-fluid .welcome h1{
-			font-size: 72px;
-			color: white;
-		}
-		header .header-bottom nav ul li .nav-link{
-			font-size: 15px;
-			padding-left: 20px;
-		}
-		}
+@media (min-width: 1200px) {
+  header .header-bottom nav{
+	padding: 23px 0px 23px 0px;
+}
+	header .header-bottom img{
+		height: 55px;
+}
+	section .container-fluid .welcome h1{
+	font-size: 72px;
+	color: white;
+}
+header .header-bottom nav ul li .nav-link{
+	font-size: 15px;
+	padding-left: 20px;
+}
+}
 
-		/* Large screens */
+/* Large screens */
 
-		@media (min-width: 992px) and (max-width: 1199.98px) {
-			header .header-bottom nav{
-			padding: 30px 0px 30px 0px;
-		}
-			header .header-bottom img{
-				height: 50px;
-		}
-			header .header-bottom nav ul li .nav-link{
-			font-size: 15px;
-			padding-left: 20px;
-		}
-		section .container-fluid .welcome h1{
-			font-size: 65px;
-			color: white;
-		}
-		}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	header .header-bottom nav{
+	padding: 30px 0px 30px 0px;
+}
+	header .header-bottom img{
+		height: 50px;
+}
+	header .header-bottom nav ul li .nav-link{
+	font-size: 15px;
+	padding-left: 20px;
+}
+section .container-fluid .welcome h1{
+	font-size: 65px;
+	color: white;
+}
+}
 
-		/* Medium-sized screens */
+/* Medium-sized screens */
 
-		@media (min-width: 768px) and (max-width: 991.98px) {
-		  header .header-bottom nav{
-			padding: 20px 0px 20px 0px;
-		}
-			header .header-bottom img{
-				height: 40px;
-		}
-			header .header-bottom nav ul li .nav-link{
-			font-size: 15px;
-			padding-left: 20px;
-		}			
-		section .container-fluid .welcome h1{
-			font-size: 55px;
-			color: white;
-		}
-		}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header .header-bottom nav{
+	padding: 20px 0px 20px 0px;
+}
+	header .header-bottom img{
+		height: 40px;
+}
+	header .header-bottom nav ul li .nav-link{
+	font-size: 15px;
+	padding-left: 20px;
+}			
+section .container-fluid .welcome h1{
+	font-size: 55px;
+	color: white;
+}
+}
 
-		/* Small screens */
+/* Small screens */
 
-		@media (min-width: 576px) and (max-width: 767.98px) {
-			header .header-bottom nav{
-			padding-top: 40px;
-			padding-bottom: 40px;
-		}
-			header .header-bottom img{
-			height: 50px;
-			padding-left: 30px;
-		}
-			header .header-bottom nav ul li .nav-link{
-			font-size: 15px;
-			margin: 0px;
-		}
-		header .header-bottom nav .search-btn{
-			position: absolute;
-			right: 35px;
-			top: 50px;
-		}
-		header .header-bottom nav .navbar-toggler{
-			border-color: #f5d76e;
-			padding: 8px 8px 7px 8px;
-			position: absolute; 
-			top: 50px;
-			right: 80px;
-		}
-		header .header-bottom nav .navbar-toggler:focus{
-		  box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.4);
-		  outline: none;
-		}
-		header .header-bottom nav .navbar-toggler:hover{
-		  box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.4);
-		  outline: none;
-		  transition: 0.3s;
-		}
-		section .container-fluid .welcome h1{
-			font-size: 45px;
-			color: white;
-		}
-		}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	header .header-bottom nav{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+	header .header-bottom img{
+	height: 50px;
+	padding-left: 30px;
+}
+	header .header-bottom nav ul li .nav-link{
+	font-size: 15px;
+	margin: 0px;
+}
+header .header-bottom nav .search-btn{
+	position: absolute;
+	right: 35px;
+	top: 50px;
+}
+header .header-bottom nav .navbar-toggler{
+	border-color: #f5d76e;
+	padding: 8px 8px 7px 8px;
+	position: absolute; 
+	top: 50px;
+	right: 80px;
+}
+header .header-bottom nav .navbar-toggler:focus{
+  box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.4);
+  outline: none;
+}
+header .header-bottom nav .navbar-toggler:hover{
+  box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.4);
+  outline: none;
+  transition: 0.3s;
+}
+section .container-fluid .welcome h1{
+	font-size: 45px;
+	color: white;
+}
+}
 
-		/* Extra small screens */
+/* Extra small screens */
 
-		@media (min-width: 450px) and (max-width: 575.98px) {
-			header .header-bottom nav{
-			padding-top: 30px;
-			padding-bottom: 30px;
-		}
-			header .header-bottom img{
-			height: 55px;
-			padding-left: 20px;
-		}
-			header .header-bottom nav ul li .nav-link{
-			font-size: 15px;
-			margin: 0px;
-		}
-		header .header-bottom nav .search-btn{
-			position: absolute;
-			right: 25px;
-			top: 45px;
-		}
-		header .header-bottom nav .navbar-toggler{
-			border-color: #f5d76e;
-			padding: 8px 8px 7px 8px;
-			position: absolute; 
-			top: 45px;
-			right: 70px;
-		}
-		header .header-bottom nav .navbar-toggler:focus{
-		  box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.4);
-		  outline: none;
-		}
-		section .container-fluid .welcome h1{
-			font-size: 45px;
-			color: white;
-		}
-		}
+@media (min-width: 450px) and (max-width: 575.98px) {
+	header .header-bottom nav{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+	header .header-bottom img{
+	height: 55px;
+	padding-left: 20px;
+}
+	header .header-bottom nav ul li .nav-link{
+	font-size: 15px;
+	margin: 0px;
+}
+header .header-bottom nav .search-btn{
+	position: absolute;
+	right: 25px;
+	top: 45px;
+}
+header .header-bottom nav .navbar-toggler{
+	border-color: #f5d76e;
+	padding: 8px 8px 7px 8px;
+	position: absolute; 
+	top: 45px;
+	right: 70px;
+}
+header .header-bottom nav .navbar-toggler:focus{
+  box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.4);
+  outline: none;
+}
+section .container-fluid .welcome h1{
+	font-size: 45px;
+	color: white;
+}
+}
 
-		/* Smaller then extra small */
+/* Smaller then extra small */
 
-		@media (max-width: 449.98px){
-			header .header-bottom nav{
-			padding-top: 20px;
-			padding-bottom: 20px;
-		}
-			header .header-bottom img{
-			height: 40px;
-			padding-left: 10px;
-		}
-			header .header-bottom nav ul li .nav-link{
-			font-size: 12px;
-			 margin: 0px;
-		}
-			header .header-bottom nav .search-btn{
-			color: white;
-			position: absolute;
-			right: 15px;
-			top: 25px;
-		}
-			header .header-bottom nav .navbar-toggler{
-			border-color: #f5d76e;
-			padding: 8px 8px 7px 8px;
-			position: absolute; 
-			top: 25px;
-			right: 60px;
-		}
-		header .header-bottom nav .navbar-toggler:focus{
-		  box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.4);
-		  outline: none;
-		}
-		section .container-fluid .welcome h1{
-			font-size: 40px;
-			color: white;
-		}
-		}
+@media (max-width: 449.98px){
+	header .header-bottom nav{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+	header .header-bottom img{
+	height: 40px;
+	padding-left: 10px;
+}
+	header .header-bottom nav ul li .nav-link{
+	font-size: 12px;
+	 margin: 0px;
+}
+	header .header-bottom nav .search-btn{
+	color: white;
+	position: absolute;
+	right: 15px;
+	top: 25px;
+}
+	header .header-bottom nav .navbar-toggler{
+	border-color: #f5d76e;
+	padding: 8px 8px 7px 8px;
+	position: absolute; 
+	top: 25px;
+	right: 60px;
+}
+header .header-bottom nav .navbar-toggler:focus{
+  box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.4);
+  outline: none;
+}
+section .container-fluid .welcome h1{
+	font-size: 40px;
+	color: white;
+}
+}
 
-		
+
+#header-icons .fa-facebook-f:hover,
+#header-icons .fa-instagram:hover {
+	color: #f5d76e;
+	transition: 1s;
+}		
 
 
 
