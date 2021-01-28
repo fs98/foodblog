@@ -138,7 +138,7 @@ section .welcome-container {
 	background-image: url('../img/background/bg-1.jpg'); 
 	background-repeat: no-repeat; 
 	background-attachment: scroll; 
-	background-position: center top; 
+	background-position: center bottom; 
 	background-size: cover;
 	display: flex; 
 	justify-content: center; 
@@ -191,26 +191,6 @@ section .container-fluid .welcome{
 	to {
 		opacity: 1;
 	}
-}
-
-section .container div .left-column{
-	position: relative;
-	height: 340px; 
-	background-image: url('../img/background/bg-2.jpg'); 
-	background-position: center center; 
-	background-repeat: no-repeat; 
-	background-size: cover; 
-	background-attachment: scroll;
-}
-
-section .check-list-container{
-	overflow: hidden;
-}
-
-section .container div .right-column{
-	height: 340px; 
-	background-color: #91b496; 
-	width: 100%;
 }
 
 #contact-info input{
@@ -385,19 +365,22 @@ header #header-top{
 #search-container select{
 	height: 60px;
 	font-size: 14px;
-	font-style: italic;
+	font-weight: 400;
 }
 
 #search-container input{
 	height: 60px;
 	font-size: 14px;
-	font-style: italic;
 }
 
 #search-container button{
 	height: 60px; 
 	font-size: 14px;
 	letter-spacing: 0.5px;
+}
+
+#search-container button:focus{
+	box-shadow: 0 0 0 3px rgba(145, 180, 150, 0.5);
 }
 
 @media (max-width: 575.98px) {
@@ -612,6 +595,20 @@ section .container-fluid .welcome h1{
 	color: #f5d76e;
 	transition: 1s;
 }		
+
+
+#about a:focus{
+	box-shadow: 0 0 0 3px rgba(145, 180, 150, 0.5);
+}
+
+#recipes a:hover{
+	color: #91b496;
+	transition: 1s;
+}
+
+#about ul{
+	list-style-type: none;
+}
 
 
 

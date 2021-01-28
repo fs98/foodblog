@@ -27,15 +27,17 @@
 	<!-- [Top header] -->
 
 	<section class="text-center" id="header-top">
-		<div class="container d-flex justify-content-between">
-			<div id="header-icons">
-			<a href="#" class="text-default"><i class="fab fa-facebook-f"></i></a>
-			<a href="#" class="text-default ml-4"><i class="fab fa-instagram"></i></a>
-			</div>
-			<div>
-			<a href="#"><img src="img/icons/bih.png" class="h-20"></a>
-			<span class="text-white">|</span>
-			<a href="index.html"><img src="img/icons/uk.png" class="h-20"></a>
+		<div class="container">
+			<div class="row d-flex justify-content-between">
+				<div id="header-icons">
+				<a href="#" class="text-default"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="text-default ml-4"><i class="fab fa-instagram"></i></a>
+				</div>
+				<div>
+				<a href="index.html"><img src="img/icons/bih.png" class="h-20"></a>
+				<span class="text-white">|</span>
+				<a href="index.html"><img src="img/icons/uk.png" class="h-20"></a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -60,7 +62,7 @@
 		        <hr class="d-md-none d-xl-none d-lg-none">
 		      </li>
 		      <li class="nav-item pt-0 mt-0">
-		        <a class="nav-link text-dark p-lg-4 p-xl-4 p-md-3 p-sm-0 p-0 ml-2 ml-xl-0 ml-lg-0 ml-md-0 ml-sm-2" href="about.html">About Me</a>
+		        <a class="nav-link text-dark p-lg-4 p-xl-4 p-md-3 p-sm-0 p-0 ml-2 ml-xl-0 ml-lg-0 ml-md-0 ml-sm-2" href="about.html">About us</a>
 		        <hr class="d-md-none d-xl-none d-lg-none">
 		      </li>
 		      <li class="nav-item">
@@ -85,34 +87,12 @@
 
 <section class="pb-lg-5" id="section-1">
 	<div class="container-fluid welcome-container">
-		<div class="welcome text-center rounded-lg w3-animate-zoom">
-			<h1 class="font-weight-bold m-0">Welcome</h1>
-		</div>
-	</div>
-</section>
-
-<!-- Check-list container -->
-
-<section class="mt-5 mb-5 px-3">
-	<div class="container check-list-container">
-		<div class="row">
-			<div class="col-lg-7 col-xl-8 col-md-6 d-none d-sm-none d-lg-block d-xl-block d-md-block left-column"></div>
-			<div class="col-lg-5 col-xl-4 col-md-6 right-column d-flex align-items-center justify-content-lg-start justify-content-xl-start justify-content-md-start justify-content-sm-center justify-content-center">
-				<ul class="pl-0 text-white text-left check-list-1">
-					<h1 class="text-white font-weight-bold">Amazing<br>recipes</h1>
-					<li class="pt-2"><span><i class="fas fa-check"></i></span> Step by Step Tutorial</li>
-					<li class="pt-1"><span><i class="fas fa-check"></i></span> Easy to Make</li>
-					<li class="pt-1"><span><i class="fas fa-check"></i></span> Suitable for Everyone</li>
-					<li class="pt-1"><span><i class="fas fa-check"></i></span> Tested</li>
-				</ul>
-			</div>
-		</div>
 	</div>
 </section>
 
 <!-- Recipes section -->
 
-<section class="mt-5 pt-3 mb-4 px-3" id="recipes-title">
+<section class="mt-5 mb-4 px-3" id="recipes-title">
 	<div class="container px-0">
 		<div class="row w-100 h-100 m-0">
 				<div class="col-12 d-flex justify-content-start align-items-center w-100 h-100 px-0">
@@ -260,7 +240,7 @@
 
 
 	for (var i = 0; i < recipeArray.length; i++) {
-	jQuery("#recipes").append('<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 mb-4 column-350"><div class="card rounded-0 border-0 w-100 h-100"><img class="rounded-0 m-0 w-100 h-100" src="'+ recipeArray[i].image +'" alt="Card image"><div class="card-img-overlay p-0 d-flex align-items-end "><div class="pl-3 ml-0 pb-3 w-100 h-80 bg-transparent-white"><h6 class="pt-3 m-0">'+ recipeArray[i].title +'</h6><p class="card-text pt-1 small-card-text">Ease of making: <span class="text-success font-weight-bold">'+ recipeArray[i].dificulty +'</span><br><span><i class="fas fa-clock" data-toggle="tool-tip" title="Vrijeme pripreme"></i></span><span> '+ recipeArray[i].time +'</span></p></div></div></div></div>');	
+	jQuery("#recipes").append('<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 mb-4 column-350" ><div class="card rounded-0 border-0 w-100 h-100"><img class="rounded-0 m-0 w-100 h-100" src="'+ recipeArray[i].image +'" alt="Card image"><div class="card-img-overlay p-0 d-flex align-items-end"><div class="pl-3 ml-0 pb-3 w-100 h-80 bg-transparent-white"><h6 class="pt-3 m-0"><a href="recipedetails.html" class="text-decoration-none text-default">'+ recipeArray[i].title +'</a></h6><p class="card-text pt-1 small-card-text">Difficulty: <span class="text-success font-weight-bold">'+ recipeArray[i].dificulty +'</span><br><span><i class="fas fa-clock" data-toggle="tool-tip" title="Vrijeme pripreme"></i></span><span> '+ recipeArray[i].time +'</span></p></div></div></div></div>');	
 	}
 </script>
 
